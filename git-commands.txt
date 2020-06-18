@@ -76,3 +76,9 @@ git branch nome
 
 Mudar para a nova branch:
 git checkout nome
+
+Criar e já mudar para a nova branch:
+git checkout -b nome
+
+Trazer branch para dentro de outra (exemplo, branch lista para branch master):
+git merge nome
