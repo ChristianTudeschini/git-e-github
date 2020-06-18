@@ -24,6 +24,7 @@ Outros modos para ver o log:
 git log --oneline (mostra todos os commits em uma única linha)
 git log -p (mostra as alterações feitas no código)
 + em https://devhints.io/git-log.
+git log --graph(mostra a linha de desenvolvimento, branch etc)
 
 Ignorar pastas e arquivos:
 - Criar arquivo .gitignore e colocar oq deseja que não seja monitorado/commitado
@@ -82,3 +83,6 @@ git checkout -b nome
 
 Trazer branch para dentro de outra (exemplo, branch lista para branch master):
 git merge nome
+
+Pegar as alterações de uma branch e atualizar a master:
+git rebase nome
