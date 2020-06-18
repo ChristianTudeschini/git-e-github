@@ -69,7 +69,6 @@ git remote add origin https://github.com/usuario/repositorio.git
 
 git push -u origin master (-u vai simplificar o origin master nas próximas vezes, não havendo necessidade de definir o origin e o master, mas é um parametro opcional)
 
-
 ------------------------
 
 Criar uma nova branch:
@@ -86,3 +85,15 @@ git merge nome
 
 Pegar as alterações de uma branch e atualizar a master:
 git rebase nome
+
+------------------------
+
+CONTROLE DE VERSÃO:
+
+Descartar as alterações (quando ainda não foi feito o commit):
+git checkout -- nomearquivo
+
+Cancelar o commit:
+git reset HEAD nomearquivo (HEAD: Voltando para o estado de trabalho)
+
+Desfazer um commit
