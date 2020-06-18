@@ -59,7 +59,7 @@ git remote rename origin repositorio
 Puxar alterações do servidor:
 git pull repositorio master
 
---------------------------------
+------------------------
 
 GITHUB:
 
@@ -68,3 +68,11 @@ git remote add origin https://github.com/usuario/repositorio.git
 
 git push -u origin master (-u vai simplificar o origin master nas próximas vezes, não havendo necessidade de definir o origin e o master, mas é um parametro opcional)
 
+
+------------------------
+
+Criar uma nova branch:
+git branch nome
+
+Mudar para a nova branch:
+git checkout nome
