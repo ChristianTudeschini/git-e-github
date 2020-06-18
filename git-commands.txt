@@ -69,6 +69,7 @@ git remote add origin https://github.com/usuario/repositorio.git
 
 git push -u origin master (-u vai simplificar o origin master nas próximas vezes, não havendo necessidade de definir o origin e o master, mas é um parametro opcional)
 
+
 ------------------------
 
 Criar uma nova branch:
@@ -84,6 +85,7 @@ Trazer branch para dentro de outra (exemplo, branch lista para branch master):
 git merge nome
 
 Pegar as alterações de uma branch e atualizar a master:
+<<<<<<< HEAD
 git rebase nome
 
 ------------------------
@@ -111,3 +113,6 @@ Pegue o hash do commit que deseja desfazer
 }
 
 git revert b7226364ef810bb70a20082299f69c83ca93c48f
+=======
+git rebase nome
+>>>>>>> parent of b722636... hash
