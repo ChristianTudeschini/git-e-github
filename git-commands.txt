@@ -1,0 +1,70 @@
+Informar para o git quem é você:
+git config --local user.name "Seu nome aqui"
+git config --local user.email "seu@email.aqui"
+
+Iniciar um repositório:
+git init
+
+Enxergar modificações:
+git status
+
+Adicionar um arquivo (ou vários) para monitoração:
+git add nomearquivo (ou . para todos os arquivos)
+
+Parar de monitorar o arquivo:
+git rm --cached nomearquivo
+
+Dar um commit (com mensagem):
+git commit -m "a mensagem que você quer enviar"
+
+Ver histórico do projeto:
+git log
+
+Outros modos para ver o log:
+git log --oneline (mostra todos os commits em uma única linha)
+git log -p (mostra as alterações feitas no código)
++ em https://devhints.io/git-log.
+
+Ignorar pastas e arquivos:
+- Criar arquivo .gitignore e colocar oq deseja que não seja monitorado/commitado
+
+------------------------
+
+Na pasta do servidor (local):
+git init --bare (--bare significa que o repositório é puro, ou seja, só possui as alterações dos arquivos)
+Portanto, ele vai servir apenas para que todos os desenvolvedores possuam as alterações que forem sendo feitas, sem fazer de todos os arquivos
+
+------------------------
+
+Voltando para a pasta projeto
+
+Listar todos os repositórios remotos que o repositório local conhece:
+git remote
+
+Adicionar um repositório remoto:
+git remote add repositorio caminho
+
+Mostrar endereço do repositório:
+git remote -v
+
+Clonar repositório:
+git clone endereço pasta-a-ser-criada
+
+Enviar/Empurrar alterações para o servidor:
+git push repositorio master
+
+Renomear arquivo remote:
+git remote rename origin repositorio
+
+Puxar alterações do servidor:
+git pull repositorio master
+
+--------------------------------
+
+GITHUB:
+
+Puxar repositório:
+git remote add origin https://github.com/usuario/repositorio.git
+
+git push -u origin master (-u vai simplificar o origin master nas próximas vezes, não havendo necessidade de definir o origin e o master, mas é um parametro opcional)
+
