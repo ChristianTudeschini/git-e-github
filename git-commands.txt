@@ -96,4 +96,18 @@ git checkout -- nomearquivo
 Cancelar o commit:
 git reset HEAD nomearquivo (HEAD: Voltando para o estado de trabalho)
 
-Desfazer um commit
+Desfazer um commit:
+Pegue o hash do commit que deseja desfazer
+{
+    C:\Alura\Git e Github\chris>git log
+    
+    commit (ESSE VALOR)b7226364ef810bb70a20082299f69c83ca93c48f (HEAD -> master)     
+    Author: Christian <christiantudeschini@gmail.com>
+    Date:   Thu Jun 18 20:43:55 2020 -0300
+
+        hash
+
+    :
+}
+
+git revert b7226364ef810bb70a20082299f69c83ca93c48f
