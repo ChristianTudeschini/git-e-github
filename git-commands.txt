@@ -98,7 +98,7 @@ git reset HEAD nomearquivo (HEAD: Voltando para o estado de trabalho)
 
 Desfazer um commit:
 Pegue o hash do commit que deseja desfazer
-{
+{ (git log)
     C:\Alura\Git e Github\chris>git log
     
     commit (ESSE VALOR)b7226364ef810bb70a20082299f69c83ca93c48f (HEAD -> master)     
@@ -109,5 +109,37 @@ Pegue o hash do commit que deseja desfazer
 
     :
 }
+{ (git log --oneline)
+    b722636 hash
+}
 
 git revert b7226364ef810bb70a20082299f69c83ca93c48f
+ou assim:
+git checkout b722636
+(nesse último comando, ele não ira repassar as mudanças pro master, já que irá para um branch sem nome, portanto, precisamos fazer o seguinte)
+git checkout -b nomenovobranch
+
+
+
+------------------------
+
+Salvar alterações para um local temporário (sem a necessidade de um commit):
+git stash
+
+Listando as alterações temporárias:
+git stash list
+
+Pegar dados salvos e trazer para o diretório de trabalho:
+git stash list (vai retornar a lista de stash)
+git stash apply 0 (qual stash você quer pegar)
+
+Remover o stash:
+git stash drop
+
+Fazer os dois ao mesmo tempo:
+git stach pop (ele tira a última alteração adicionada e já traz ela para o diretório de trabalho)
+
+------------------------
+
+Mostrar diferença do código:
+git diff
